@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Your Name</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li><a href="#home" class="menu-link">Home</a></li>
+                    <li><a href="#about" class="menu-link">About</a></li>
+                    <li><a href="#skills" class="menu-link">Skills</a></li>
+                    <li><a href="#projects" class="menu-link">Projects</a></li>
+                    <li><a href="#contact" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
+            <div class="intro">
+                <img src="assets/images/your-photo.jpg" alt="A professional photo of Your Name" class="profile-photo">
+                <div class="headings">
+                    <h3 class="greet-heading">Hello, I'm</h3>
+                    <h1 class="my-heading">Your Name</h1>
+                    <h4 class="sub-heading">Your Professional Title or Elevator Pitch (e.g., Aspiring Software Developer)</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h1 class="section-heading">About Me</h1>
+                <p>
+                    This is where you tell your professional story. Talk about your passion for your field, your key experiences, and what motivates you. Keep it concise and engaging, around 2-3 paragraphs. Mention your background and what kind of opportunities you are looking for.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h1 class="section-heading">Skills & Languages</h1>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Language 1 (e.g., JavaScript)</li>
+                        <li>Language 2 (e.g., Python)</li>
+                        <li>Language 3 (e.g., HTML/CSS)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <ul>
+                        <li>Tool 1 (e.g., React.js)</li>
+                        <li>Tool 2 (e.g., Node.js)</li>
+                        <li>Tool 3 (e.g., Git & GitHub)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Spoken Languages</h3>
+                    <ul>
+                        <li>Language A (e.g., English - Native)</li>
+                        <li>Language B (e.g., Spanish - Professional)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" class="education">
+            <h1 class="section-heading">Education</h1>
+            <div class="education-item">
+                <h3>Your Degree (e.g., Bachelor of Science in Computer Science)</h3>
+                <p>University Name | City, State</p>
+                <p>Graduation Year (e.g., 2020 - 2024)</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h1 class="section-heading">Projects & Work</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Screenshot of Project 1">
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p>A brief description of the project. What problem does it solve? What was your role? What technologies were used?</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Live Demo</a>
+                            <a href="#" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="achievements" class="achievements">
+             <h1 class="section-heading">Achievements & Certificates</h1>
+             <ul>
+                <li>Achievement or Certificate 1 (e.g., Dean's List - Fall 2023)</li>
+                <li>Achievement or Certificate 2 (e.g., Certified Web Developer - XYZ Org)</li>
+             </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h1 class="section-heading">Get In Touch</h1>
+            <p>I'm currently seeking new opportunities. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
+                <a href="assets/documents/resume.pdf" download class="contact-button">Download Resume</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
