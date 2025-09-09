@@ -1,140 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bansari Kikani</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bansari Kikani - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
+    <!-- Navigation -->
     <nav class="navbar">
-      <div class="logo">
-        <h2 class="logo-heading">Bansari Kikani</h2>
-      </div>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars hamburger-icon"></i>
-        <i class="fas fa-times cross-icon"></i>
-      </div>
-      <div class="menu">
-        <ul class="menu-list">
-          <li><a href="#home" class="menu-link">Home</a></li>
-          <li><a href="#about" class="menu-link">About</a></li>
-          <li><a href="#skills" class="menu-link">Skills</a></li>
-          <li><a href="#projects" class="menu-link">Projects</a></li>
-          <li><a href="#contact" class="menu-link">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <main>
-    <section id="home" class="hero">
-      <div id="particles-js"></div>
-      <div class="intro">
-        <img src="assets/images/photo_2025-09-05_23-15-31.jpg" alt="" class="profile-photo">
-        <div class="headings">
-          <h3 class="greet-heading">Hello, I'm</h3>
-          <h1 class="my-heading">Bansari Kikani</h1>
-          <h4 class="sub-heading">Data Scientist | AI Agent Architect & GenAI Researcher | Co-building PrompusAI | Entrepreneur | Automation Strategist</h4>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about">
-      <h1 class="section-heading">About Me</h1>
-      <p>
-        My journey into AI started with a fascination for what's possible when technology and creativity intersect. 
-        Professionally, I'm a hands-on AI/ML Engineer specializing in the design and development of multi-agent AI systems.
-        My focus is on creating practical, production-ready AI tools that directly solve business problems for startups.
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="skills">
-      <h1 class="section-heading">Skills & Languages</h1>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Frameworks & Tools</h3>
-          <ul>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Git & GitHub</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Spoken Languages</h3>
-          <ul>
-            <li>English</li>
-            <li>Gujarati</li>
-            <li>Hindi</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects">
-      <h1 class="section-heading">Projects & Work</h1>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/images/project1.png" alt="Project 1">
-          <div class="project-info">
-            <h3>AI Agent Platform</h3>
-            <p>A modular AI agent platform with memory & RAG for startups.</p>
-            <div class="project-links">
-              <a href="#">Source Code</a>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BK</span>
             </div>
-          </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="home" class="landing-section">
+        <div class="container">
+            <div class="landing-content">
+                <div class="hero-text">
+                    <div class="glitch-text">
+                        <h1 data-text="BANSARI KIKANI">BANSARI KIKANI</h1>
+                    </div>
+                    <div class="subtitle">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Data Scientist | AI Agent Architect & GenAI Researcher | Co-building PrompusAI | Enterpreneur | Business Analysis | Automation Strategy | Startup Enthusiast
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('about')">
+                            <span>Explore My World</span>
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('contact')">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="spline-container">
+                        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.44/build/spline-viewer.js"></script>
+                        <spline-viewer url="https://prod.spline.design/Au6VvRUB4CBal2lR/scene.splinecode"></spline-viewer>
+                        <div class="interactive-bot" role="button" aria-label="Interactive bot">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                            <span>interactive bot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-particles"></div>
+        <div class="geometric-bg"></div>
     </section>
 
-    <!-- Achievements -->
-    <section id="achievements" class="achievements">
-      <h1 class="section-heading">Achievements</h1>
-      <ul>
-        <li>Certified Web Developer</li>
-        <li>Dean’s List – Fall 2023</li>
-      </ul>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="assets/images/profile.jpg" alt="Bansari Kikani" class="profile-image">
+                        <div class="image-overlay"></div>
+                        <div class="hologram-effect"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="text-content">
+                        <h3 class="about-title">Data Scientist</h3>
+                        <p class="about-description">
+                            My journey into AI started with a fascination for what's possible when technology and creativity intersect. This same drive that leads me to build complex technical systems is inspired by my interests in music and art. It's about finding harmony in the data and a clear vision in a sea of complexity.
+
+Professionally, I'm a hands-on AI/ML Engineer specializing in the design and development of multi-agent AI systems. My experience ranges from crafting a finance and reporting AI agent to building document-parsing systems with memory and Retrieval-Augmented Generation (RAG).
+
+
+                        </p>
+                        <p class="about-description">
+                            My focus is on creating practical, production-ready AI tools that directly solve business problems for startups. I believe in modular, scalable architectures and the power of intelligent automation.
+
+If you're a founder or investor and want to talk about how AI agents can transform operations, drive innovation, or simply save you from 'spreadsheet hell,' I'd love to connect.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skills-grid">
+                                <!-- SQL -->
+                                <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>SQL</span>
+                                </div>
+
+                                <!-- Python -->
+                                <div class="skill-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+
+                                <!-- GenAI -->
+                                <div class="skill-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span>GenAI</span>
+                                </div>
+
+                                <!-- Java -->
+                                <div class="skill-item">
+                                    <i class="fab fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+
+                                <!-- Flask -->
+                                <div class="skill-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Flask</span>
+                                </div>
+
+                                <!-- LLM -->
+                                <div class="skill-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>LLM</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h1 class="section-heading">Get In Touch</h1>
-      <p>Feel free to reach out!</p>
-      <div class="contact-links">
-        <a href="mailto:bansari45603@gmail.com" class="contact-button">Email Me</a>
-        <a href="assets/documents/Bansari_Kikani_Resume_1.pdf" download class="contact-button">Download Resume</a>
-        <a href="https://linkedin.com/in/bansari31" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/KikaniBansari" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-      </div>
+    <!-- Education Timeline -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021-2024</div>
+                        <h3 class="timeline-title">Bachelor of Science</h3>
+                        <h4 class="timeline-subtitle">Information Technology</h4>
+                        <p class="timeline-description">
+                            Focused on software development, data structures, algorithms, and web technologies.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">Lead Speaker</span>
+                            <span class="achievement">Workshops on AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024-2026</div>
+                        <h3 class="timeline-title">Master of Science</h3>
+                        <h4 class="timeline-subtitle">Data Science</h4>
+                        <p class="timeline-description">
+                            Specialized in machine learning, big data analytics, and AI-driven solutions.
+                            Mostly working on Generative AI and LLMs with RAG and MCP servers.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">Comprehensive study on Meta feature selection - Research Paper</span>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Bansari Kikani. All rights reserved.</p>
-  </footer>
+    <!-- Certificates & Projects -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="certificates-container">
+            <h3 class="subsection-title">Certifications</h3>
+            <div class="certificates-grid">
+                <!-- Certificate 3 -->
+                <div class="certificate-card">
+                <div class="card-glow"></div>
+                <div class="certificate-icon">
+                    <img src="assets/images/stanford.png" alt="AWS Certificate">
+                </div>
+                <h4>Supervised Machine Learning</h4>
+                <p>Stanford</p>
+                <div class="certificate-year">2023</div>
+                </div>
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                <div class="card-glow"></div>
+                <div class="certificate-icon">
+                    <img src="assets/images/Digital Sticker_Introduction to Large Language Models.png" alt="IBM LLM Certificate">
+                </div>
+                <h4>Introduction to Large Language Models</h4>
+                <p>IBM</p>
+                <div class="certificate-year">2025</div>
+                </div>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="script.js"></script>
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                <div class="card-glow"></div>
+                <div class="certificate-icon">
+                    <img src="assets/images/dl.png" alt="Python Certificate">
+                </div>
+                <h4>LLM'S as Operating Systems: Agent Memory!</h4>
+                <p>Deep Learning</p>
+                <div class="certificate-year">2025</div>
+                </div>
+
+                
+                <!-- Certificate 4 -->
+                <div class="certificate-card">
+                <div class="card-glow"></div>
+                <div class="certificate-icon">
+                    <img src="assets/images/ibm.png" alt="AWS Certificate">
+                </div>
+                <h4>What is Generative AI</h4>
+                <p>Microsoft</p>
+                <div class="certificate-year">2025</div>
+                </div>
+
+            </div>
+            </div>
+
+
+            <!-- Projects -->
+            <div class="projects-container">
+                <h3 class="subsection-title">Featured Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/projects/rag-chatbot.png" alt="RAG Chatbot Project">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Meta-Feature Selection</h4>
+                            <p class="project-description">
+                                My research paper on meta-feature selection techniques, exploring advanced methods to enhance machine learning model performance through optimal feature selection.
+                                Selection of best model to determine the one best for healthcare data.
+                            </p>
+                            <div class="project-tech">
+                                <span>Metamodel</span>
+                                <span>SVM</span>
+                                <span>Random Forest</span>
+                                <span>Decision Tree</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/projects/rag-chatbot.png" alt="RAG Chatbot Project">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">RAG based chat bot through scraped URL'S</h4>
+                            <p class="project-description">
+                                A smart bot that works offline on the scraped data from the web in json format and answers the queries based on that data using RAG and LLM models.
+                                It create chromadb vector database to store the data and use it to answer the queries.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>RAG</span>
+                                <span>Agentic AI</span>
+                                <span>ChromaDB</span>
+                                <span>API/Quart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/projects/rag-chatbot.png" alt="RAG Chatbot Project">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Interactive Portfolio</h4>
+                            <p class="project-description">
+                                This very portfolio you're viewing! A showcase of modern web technologies 
+                                and interactive design principles.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Ready to collaborate?</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. 
+                        I'm always working on ideas for new startups and projects. Let's connect and see how we can create something amazing together!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>bansari45603@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/bansari31" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/KikaniBansari" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="assets/downloads/Bansari Kikani Resume.pdf" download class="social-link resume-download">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                <form class="form" 
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfJQ7vpATtslYWCHYhnfU3wjynbN2K0_7XZOFjfvwJr61qGug/formResponse" 
+                    method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                    
+                    <div class="form-group">
+                        <input type="text" name="entry.507872448" id="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="entry.2124056481" id="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="entry.2100042675" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="entry.2019778046" id="message" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="form-line"></div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Bansari Kikani. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
