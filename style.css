@@ -882,14 +882,21 @@ body {
   opacity: 0;
   transition: var(--transition);
 }
-
 .project-image:hover .project-overlay {
   opacity: 1;
 }
 
 .project-links {
+  position: absolute;
+  left: 42%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* exact center */
   display: flex;
-  gap: 10px;
+  gap: 20px;           /* keeps space if you add more icons */
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .project-link {
