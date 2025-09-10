@@ -863,7 +863,7 @@ body {
 
 .project-image {
   height: 400px;
-   width: 500px;
+   width: 450px;
   background: var(--gradient-primary);
   position: relative;
   overflow: hidden;
