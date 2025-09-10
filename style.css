@@ -862,7 +862,7 @@ body {
 }
 
 .project-image {
-  height: 500px;
+  height: 400px;
    width: 500px;
   background: var(--gradient-primary);
   position: relative;
