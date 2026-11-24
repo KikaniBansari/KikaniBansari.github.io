@@ -3,205 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bansari Kikani | AI Systems Architect, Tech Advisor & Founder</title>
-    <meta name="description" content="Portfolio & Services of Bansari Kikani — AI Systems Architect, CEO of Polarions AI, former Interim CTO at Yugal Wellness. Offering AI Agents, ERP Systems, Full-Stack App Development, and Startup Growth Consulting.">
+    <title>Bansari Kikani — AI Systems Architect, Tech Advisor & Founder</title>
+    <meta name="description" content="Personal portfolio and services of Bansari Kikani — Technical Founder, AI Systems Architect, and former Interim CTO. Building autonomous agents, enterprise ERPs, and high-growth digital products.">
     
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Bansari Kikani | AI Systems Architect & Founder">
-    <meta property="og:description" content="AI Agents, ERP Systems, Full-Stack Apps & Startup Growth Advisory.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bansari Kikani — AI Systems Architect & Founder">
+    <meta property="og:description" content="Autonomous AI Agents, Enterprise ERPs, Full-Stack Applications, and Startup Growth Advisory.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kikanibansari.github.io/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Top Ambient Glow -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <span class="logo-text">BK</span>
-                <span class="logo-dot"></span>
+            <a href="#home" class="nav-brand">
+                <span class="brand-avatar">BK</span>
+                <span class="brand-name">Bansari Kikani</span>
             </a>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
+            
+            <div class="nav-menu" id="navMenu">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#services" class="nav-link">Services</a>
-                <a href="#experience" class="nav-link">Journey</a>
+                <a href="#journey" class="nav-link">Journey</a>
                 <a href="#education" class="nav-link">Education</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link nav-cta">Work With Me</a>
+                <a href="#work" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-btn">Start a Project</a>
             </div>
-            <div class="hamburger">
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Landing / Hero Section -->
-    <section id="home" class="landing-section">
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
         <div class="container">
-            <div class="landing-content">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <span class="badge-dot"></span>
-                        <span>Available for Strategic Projects & Tech Advisory</span>
+            <div class="hero-grid">
+                <div class="hero-text-block">
+                    <div class="status-badge">
+                        <span class="status-pulse"></span>
+                        <span>Available for Strategic AI & Tech Engagements</span>
                     </div>
-                    <div class="glitch-text">
-                        <h1 data-text="BANSARI KIKANI">BANSARI KIKANI</h1>
-                    </div>
-                    <div class="subtitle">
+
+                    <h1 class="hero-title">
+                        Architecting intelligent systems that turn complex technology into <span class="highlight-serif">commercial reality.</span>
+                    </h1>
+
+                    <div class="dynamic-subtitle">
+                        <span class="subtitle-static">Specializing in</span>
                         <span class="typing-text"></span>
-                        <span class="cursor">|</span>
+                        <span class="typing-cursor">|</span>
                     </div>
-                    <p class="hero-description">
-                        AI Systems Architect & Founder building autonomous multi-agent systems, high-impact enterprise ERP solutions, scalable full-stack applications, and accelerated startup growth.
+
+                    <p class="hero-lead">
+                        I am an AI Systems Architect, Technical Founder, and former Interim CTO. I design production multi-agent AI ecosystems, custom enterprise ERP platforms, and scalable web applications that accelerate revenue and automate operational drag for forward-thinking companies.
                     </p>
-                    
-                    <!-- Quick Impact Proof-Points -->
-                    <div class="hero-highlights">
-                        <div class="highlight-item">
+
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary">
+                            <span>Explore Services</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-badges-row">
+                        <div class="micro-badge badge-lavender">
                             <i class="fas fa-crown"></i>
                             <span>CEO @ Polarions AI</span>
                         </div>
-                        <div class="highlight-item">
+                        <div class="micro-badge badge-sage">
                             <i class="fas fa-laptop-code"></i>
                             <span>Former Interim CTO @ Yugal Wellness</span>
                         </div>
-                        <div class="highlight-item">
+                        <div class="micro-badge badge-peach">
                             <i class="fas fa-award"></i>
                             <span>Guinness World Record Holder</span>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-file-lines"></i>
-                            <span>Published Researcher (ICASETM 2025)</span>
+                        <div class="micro-badge badge-blue">
+                            <i class="fas fa-book-open"></i>
+                            <span>Published Researcher · ICASETM 2025</span>
                         </div>
                     </div>
-
-                    <div class="cta-buttons">
-                        <button class="btn-primary" onclick="scrollToSection('services')">
-                            <span>Explore Services</span>
-                            <i class="fas fa-bolt"></i>
-                        </button>
-                        <button class="btn-secondary" onclick="scrollToSection('contact')">
-                            <span>Let's Build Together</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
                 </div>
-                
-                <div class="hero-visual">
-                    <div class="spline-container">
-                        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.44/build/spline-viewer.js"></script>
-                        <spline-viewer url="https://prod.spline.design/Au6VvRUB4CBal2lR/scene.splinecode"></spline-viewer>
-                        <div class="interactive-bot" role="button" aria-label="Interactive 3D Experience">
-                            <i class="fas fa-robot" aria-hidden="true"></i>
-                            <span>Interactive 3D Experience</span>
+
+                <div class="hero-profile-block">
+                    <div class="profile-card">
+                        <div class="profile-frame">
+                            <img src="assets/images/profile.jpg" alt="Bansari Kikani" class="profile-portrait">
+                        </div>
+                        <div class="profile-floating-badge badge-top">
+                            <div class="icon-circle icon-sage"><i class="fas fa-check"></i></div>
+                            <div>
+                                <div class="badge-label">Delivery Velocity</div>
+                                <div class="badge-val">30-Day MVP Delivery</div>
+                            </div>
+                        </div>
+                        <div class="profile-floating-badge badge-bottom">
+                            <div class="icon-circle icon-blue"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <div class="badge-label">Model Accuracy</div>
+                                <div class="badge-val">92% Neural Selection</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Impact Metrics Bar -->
-            <div class="metrics-bar">
-                <div class="metric-card">
-                    <div class="metric-number">3+</div>
-                    <div class="metric-label">Years Hands-On AI/ML & Engineering</div>
+            <!-- Value Proof Bar -->
+            <div class="stats-strip">
+                <div class="stat-box">
+                    <div class="stat-number">3+ <span class="stat-unit">Years</span></div>
+                    <div class="stat-title">Hands-On AI/ML & Engineering</div>
+                    <div class="stat-desc">From neural research to enterprise deployments</div>
                 </div>
-                <div class="metric-divider"></div>
-                <div class="metric-card">
-                    <div class="metric-number">30 <span class="metric-unit">Days</span></div>
-                    <div class="metric-label">Rapid MVP Launch Speed</div>
+                <div class="stat-divider"></div>
+                <div class="stat-box">
+                    <div class="stat-number">30 <span class="stat-unit">Days</span></div>
+                    <div class="stat-title">Concept to Production MVP</div>
+                    <div class="stat-desc">Rapid iterative sprint cycles for founders</div>
                 </div>
-                <div class="metric-divider"></div>
-                <div class="metric-card">
-                    <div class="metric-number">92%</div>
-                    <div class="metric-label">Meta-Model Accuracy across 200+ Datasets</div>
+                <div class="stat-divider"></div>
+                <div class="stat-box">
+                    <div class="stat-number">35% <span class="stat-unit">Cut</span></div>
+                    <div class="stat-title">Retrieval Latency Reduction</div>
+                    <div class="stat-desc">Optimized embedding caching & RAG agents</div>
                 </div>
-                <div class="metric-divider"></div>
-                <div class="metric-card">
-                    <div class="metric-number">100%</div>
-                    <div class="metric-label">Client Focus & US/Global Delivery</div>
+                <div class="stat-divider"></div>
+                <div class="stat-box">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-title">US & Global Client Delivery</div>
+                    <div class="stat-desc">Seamless cross-timezone leadership & ownership</div>
                 </div>
             </div>
         </div>
-        <div class="floating-particles"></div>
-        <div class="geometric-bg"></div>
-    </section>
+    </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <div class="section-tag">WHO I AM</div>
-                <h2 class="section-title">Architecting The Future of Intelligent Systems</h2>
-                <div class="section-line"></div>
+            <div class="section-intro">
+                <span class="tag-pill pill-lavender">ABOUT ME</span>
+                <h2 class="section-heading">Blending technical depth with ruthless execution.</h2>
+                <div class="heading-line"></div>
             </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-container">
-                        <img src="assets/images/profile.jpg" alt="Bansari Kikani" class="profile-image">
-                        <div class="image-overlay"></div>
-                        <div class="hologram-effect"></div>
-                    </div>
-                    <div class="founder-badge">
-                        <i class="fas fa-shield-halved"></i>
-                        <span>Founder & Tech Leader</span>
+
+            <div class="about-grid">
+                <div class="about-story">
+                    <h3 class="story-lead">
+                        I believe software should not just work—it should create leverage, scale effortlessly, and unlock tangible business momentum.
+                    </h3>
+                    <p class="story-para">
+                        My career spans the full spectrum of software development: from training neural meta-learning models published in peer-reviewed conferences, to leading technical direction as <strong>Interim CTO at Yugal Wellness</strong>, and founding <strong>Polarions AI</strong> to deliver autonomous agent pipelines for international businesses.
+                    </p>
+                    <p class="story-para">
+                        Having worked closely with US founders, executives, and agile development teams, I know what matters: clear roadmaps, disciplined engineering, and systems that directly boost the bottom line. I thrive in taking ambiguity, dissecting core requirements, and delivering high-performance platforms on tight timelines.
+                    </p>
+                    <p class="story-para">
+                        Outside of technology, my creative discipline has led me to organize large-scale community art resulting in a <strong>Guinness World Record</strong>. I bring that exact combination of meticulous precision and big-picture ambition to every client project.
+                    </p>
+
+                    <div class="story-actions">
+                        <a href="assets/documents/Bansari_Kikani_Resume_1.pdf" download class="btn btn-outline">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download Full Resume</span>
+                        </a>
+                        <a href="https://linkedin.com/in/bansari31" target="_blank" rel="noopener" class="btn btn-ghost">
+                            <i class="fab fa-linkedin"></i>
+                            <span>View LinkedIn Profile</span>
+                        </a>
                     </div>
                 </div>
-                <div class="about-text">
-                    <div class="text-content">
-                        <h3 class="about-title">Bridging Technical Mastery & Commercial Execution</h3>
-                        <p class="about-description">
-                            I am a hands-on AI/ML Engineer, Founder, and Operations Leader with over 3 years of deep engineering experience building production large language model (LLM) agents, retrieval-augmented generation (RAG) systems, and end-to-end enterprise software.
-                        </p>
-                        <p class="about-description">
-                            Currently serving as <strong>CEO of Polarions AI</strong> (delivering AI agents and workflow automation for enterprise operations) and former <strong>Interim CTO at Yugal Wellness</strong>, I specialize in taking raw ideas and crafting them into high-yield software. My background blends rigorous data science (M.Sc. from VIT, published meta-learning researcher) with relentless operational drive supporting US founders and executive teams.
-                        </p>
-                        <p class="about-description">
-                            Whether architecting high-performance ERP backends, building autonomous agents with Model Context Protocol (MCP), or guiding early-stage startups from 0 to 1, I focus on measurable ROI and scalable architectures.
-                        </p>
 
-                        <!-- Categorized Skills Grid -->
-                        <div class="skills-categories">
-                            <div class="skill-category">
-                                <h4><i class="fas fa-brain"></i> AI & Agentic Systems</h4>
-                                <div class="skill-tags">
-                                    <span>LangChain</span>
-                                    <span>RAG & FAISS</span>
-                                    <span>Multi-Agent Architecture</span>
-                                    <span>MCP Servers</span>
-                                    <span>Whisper</span>
-                                    <span>Stable Diffusion</span>
-                                    <span>Prompt Engineering</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4><i class="fas fa-code"></i> Engineering & Full-Stack</h4>
-                                <div class="skill-tags">
-                                    <span>Python</span>
-                                    <span>FastAPI & Flask</span>
-                                    <span>Next.js</span>
-                                    <span>PostgreSQL & NoSQL</span>
-                                    <span>Docker & CI/CD</span>
-                                    <span>REST APIs</span>
-                                    <span>Kotlin & Java</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4><i class="fas fa-chart-pie"></i> Business & Operations</h4>
-                                <div class="skill-tags">
-                                    <span>Custom ERP Systems</span>
-                                    <span>n8n Automations</span>
-                                    <span>Power BI & SQL</span>
-                                    <span>Process Optimization</span>
-                                    <span>Cross-Timezone Leadership</span>
-                                    <span>Startup Growth</span>
-                                </div>
-                            </div>
+                <div class="about-pillars">
+                    <div class="pillar-card pillar-sage">
+                        <div class="pillar-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Generative AI & Agentic Architectures</h4>
+                        <p>LangChain, ReAct reasoning, Multi-Agent orchestration, Model Context Protocol (MCP), and citation-backed RAG.</p>
+                        <div class="pillar-chips">
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                            <span>MCP Servers</span>
+                            <span>Vector DBs</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card pillar-blue">
+                        <div class="pillar-icon"><i class="fas fa-cubes"></i></div>
+                        <h4>Enterprise ERP & Operations Hubs</h4>
+                        <p>Centralized platforms replacing fragmented spreadsheets, integrated with real-time Power BI, SQL, and automated SOP pipelines.</p>
+                        <div class="pillar-chips">
+                            <span>Custom ERP</span>
+                            <span>SQL & Power BI</span>
+                            <span>Workflow Design</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card pillar-lavender">
+                        <div class="pillar-icon"><i class="fas fa-code"></i></div>
+                        <h4>Full-Stack & Mobile Engineering</h4>
+                        <p>High-concurrency APIs and intuitive interfaces built using Python, FastAPI, Next.js, Flask, Kotlin, PostgreSQL, and Docker.</p>
+                        <div class="pillar-chips">
+                            <span>Next.js</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card pillar-peach">
+                        <div class="pillar-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>Startup Growth & Advisory</h4>
+                        <p>Fractional CTO leadership, technical due diligence, automated lead generation engines, and rapid 30-day MVP deployment.</p>
+                        <div class="pillar-chips">
+                            <span>Interim CTO</span>
+                            <span>MVP in 30 Days</span>
+                            <span>Lead Automation</span>
                         </div>
                     </div>
                 </div>
@@ -210,339 +249,292 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="section">
         <div class="container">
-            <div class="section-header">
-                <div class="section-tag">WHAT I OFFER</div>
-                <h2 class="section-title">Specialized Services & Solutions</h2>
-                <p class="section-subtitle">Delivering high-performance software, intelligent automation, and technical strategy tailored to accelerate your business.</p>
-                <div class="section-line"></div>
+            <div class="section-intro">
+                <span class="tag-pill pill-sage">SOLUTIONS & SERVICES</span>
+                <h2 class="section-heading">Strategic capabilities designed for measurable scale.</h2>
+                <p class="section-subtext">Partner with me to design, build, and deploy software and automation that drives your competitive advantage.</p>
+                <div class="heading-line"></div>
             </div>
 
-            <div class="services-grid">
-                <!-- Service 1: AI Agents & Intelligent Automation -->
-                <div class="service-card featured-service">
-                    <div class="service-glow"></div>
-                    <div class="service-header">
-                        <div class="service-icon-box">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <span class="service-pill">Core Specialty</span>
+            <div class="services-cards-grid">
+                <!-- Service 1 -->
+                <div class="service-box box-sage">
+                    <div class="service-badge">Flagship Offering</div>
+                    <div class="service-icon-wrapper icon-bg-sage">
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3 class="service-title">AI Agents & Autonomous Automation</h3>
-                    <p class="service-desc">
-                        Replace manual operational drag with intelligent multi-agent systems and retrieval-augmented workflows that work around the clock with verifiable accuracy.
+                    <h3 class="service-name">AI Agents & Workflow Automation</h3>
+                    <p class="service-pitch">
+                        Eliminate repetitive operations by deploying autonomous multi-agent systems and verifiable RAG knowledge bases tailored to your company's proprietary data.
                     </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> <strong>Multi-Agent Orchestration:</strong> Autonomous agents using LangChain, ReAct reasoning & Model Context Protocol (MCP).</li>
-                        <li><i class="fas fa-check"></i> <strong>Citation-Backed RAG:</strong> Document Q&A parsers with semantic search and embedding caching (35%+ latency reduction).</li>
-                        <li><i class="fas fa-check"></i> <strong>Workflow Automation:</strong> Zero-code prompt workflows & n8n pipelines integrated directly into your existing toolchain.</li>
-                        <li><i class="fas fa-check"></i> <strong>Lead Generation & Outreach:</strong> Automated scrapers, email extractors, and personalized outreach engines.</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check-circle"></i> <strong>Autonomous Multi-Agents:</strong> Multi-role agents collaborating using ReAct reasoning and MCP servers.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Verifiable RAG Pipelines:</strong> Citation-backed document search with 35%+ latency-saving embedding caching.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Workflow Integration:</strong> n8n pipelines, webhook triggers, and zero-code prompt interfaces for non-technical teams.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Lead & Prospecting Engines:</strong> Automated scrapers and enriched cold outreach pipelines.</li>
                     </ul>
-                    <div class="service-footer">
-                        <button class="btn-service" onclick="selectService('AI Agents & Automation')">
-                            <span>Inquire Service</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <button class="service-cta-btn" onclick="inquireService('AI Agents & Workflow Automation')">
+                        <span>Book an AI Consultation</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
 
-                <!-- Service 2: Enterprise ERP Systems -->
-                <div class="service-card">
-                    <div class="service-glow"></div>
-                    <div class="service-header">
-                        <div class="service-icon-box">
-                            <i class="fas fa-cubes"></i>
-                        </div>
-                        <span class="service-pill">Enterprise</span>
+                <!-- Service 2 -->
+                <div class="service-box box-blue">
+                    <div class="service-badge">Operational Backbone</div>
+                    <div class="service-icon-wrapper icon-bg-blue">
+                        <i class="fas fa-cubes"></i>
                     </div>
-                    <h3 class="service-title">ERP Systems & Business Operations</h3>
-                    <p class="service-desc">
-                        Custom-engineered ERP platforms and operations hubs designed to eliminate fragmented spreadsheets, streamline workflows, and centralize company intelligence.
+                    <h3 class="service-name">Enterprise ERP & Operations Hubs</h3>
+                    <p class="service-pitch">
+                        Transform chaotic, fragmented spreadsheets into a structured, unified operating platform that provides clarity, accountability, and real-time visibility.
                     </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> <strong>Centralized Architecture:</strong> Unify customer relations, orders, inventory, and task assignments in one dashboard.</li>
-                        <li><i class="fas fa-check"></i> <strong>Real-Time Analytics & BI:</strong> Automated data pipelines with SQL and Power BI for instant executive visibility.</li>
-                        <li><i class="fas fa-check"></i> <strong>Process Modernization:</strong> Translate messy legacy spreadsheets into scalable, structured databases.</li>
-                        <li><i class="fas fa-check"></i> <strong>Role-Based Access & Security:</strong> Enterprise-grade security policies and granular team permissions.</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check-circle"></i> <strong>Unified Operating Systems:</strong> Centralize orders, client accounts, task delegation, and inventory.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Executive Dashboards:</strong> Automated reporting pipelines with Power BI, SQL, and predictive analytics.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Process Modernization:</strong> Translate fragile manual spreadsheets into high-concurrency databases.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Role & Security Management:</strong> Enterprise-grade authentication and compartmentalized team permissions.</li>
                     </ul>
-                    <div class="service-footer">
-                        <button class="btn-service" onclick="selectService('ERP Systems & Business Operations')">
-                            <span>Inquire Service</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <button class="service-cta-btn" onclick="inquireService('Enterprise ERP & Operations Hubs')">
+                        <span>Inquire ERP Solutions</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
 
-                <!-- Service 3: Full-Stack & App Development -->
-                <div class="service-card">
-                    <div class="service-glow"></div>
-                    <div class="service-header">
-                        <div class="service-icon-box">
-                            <i class="fas fa-mobile-screen-button"></i>
-                        </div>
-                        <span class="service-pill">Full-Cycle</span>
+                <!-- Service 3 -->
+                <div class="service-box box-lavender">
+                    <div class="service-badge">Full-Cycle Engineering</div>
+                    <div class="service-icon-wrapper icon-bg-lavender">
+                        <i class="fas fa-mobile-screen-button"></i>
                     </div>
-                    <h3 class="service-title">Full-Stack & Mobile App Development</h3>
-                    <p class="service-desc">
-                        Clean, high-performance web and mobile applications built with modern frameworks, high-throughput APIs, and intuitive user experiences.
+                    <h3 class="service-name">Full-Stack & Mobile App Development</h3>
+                    <p class="service-pitch">
+                        Craft modern, responsive web and mobile applications from scratch, engineered for blazing performance, frictionless UX, and conversion.
                     </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> <strong>Rapid MVP Delivery:</strong> From wireframes to fully working, deployed production product in 30 days.</li>
-                        <li><i class="fas fa-check"></i> <strong>Modern Stack:</strong> Next.js, React, FastAPI, Flask, Python, Kotlin, and PostgreSQL.</li>
-                        <li><i class="fas fa-check"></i> <strong>Robust API Architecture:</strong> High-speed RESTful & WebSocket backends with Docker containerization.</li>
-                        <li><i class="fas fa-check"></i> <strong>Conversion-Driven UI/UX:</strong> Sleek dark-mode & responsive interfaces engineered for user retention.</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check-circle"></i> <strong>30-Day MVP Sprint:</strong> Go from product concept and wireframes to launched, working software in one month.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Modern Stack:</strong> Next.js, React, FastAPI, Python, PostgreSQL, and Kotlin.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>API & Cloud Architecture:</strong> Clean REST and WebSocket APIs containerized with Docker for seamless hosting.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Polished Interfaces:</strong> Minimalist, intuitive UI design focused on user retention and organic engagement.</li>
                     </ul>
-                    <div class="service-footer">
-                        <button class="btn-service" onclick="selectService('Full-Stack & App Development')">
-                            <span>Inquire Service</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <button class="service-cta-btn" onclick="inquireService('Full-Stack & Mobile App Development')">
+                        <span>Discuss Your App Idea</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
 
-                <!-- Service 4: Business Development & Growth -->
-                <div class="service-card">
-                    <div class="service-glow"></div>
-                    <div class="service-header">
-                        <div class="service-icon-box">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <span class="service-pill">Strategy</span>
+                <!-- Service 4 -->
+                <div class="service-box box-peach">
+                    <div class="service-badge">Commercial Strategy</div>
+                    <div class="service-icon-wrapper icon-bg-peach">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="service-title">Business Development & Strategy</h3>
-                    <p class="service-desc">
-                        Aligning cutting-edge technology with aggressive commercial goals. Proven executive support, international client management, and automated sales pipelines.
+                    <h3 class="service-name">Business Development & Market Expansion</h3>
+                    <p class="service-pitch">
+                        Align your product capabilities with direct revenue generation through automated outreach, customer relationship systems, and strategic positioning.
                     </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> <strong>Market Strategy:</strong> Pinpointing ideal client profiles (ICP) and engineering automated sales prospecting engines.</li>
-                        <li><i class="fas fa-check"></i> <strong>Cross-Border Operations:</strong> Seamless communication and execution across US, European, and Indian time zones.</li>
-                        <li><i class="fas fa-check"></i> <strong>Operational Efficiency:</strong> Eliminating organizational bottlenecks through documented SOPs and smart tooling.</li>
-                        <li><i class="fas fa-check"></i> <strong>Client Success:</strong> Dedicated relationship management ensuring high customer retention and advocacy.</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check-circle"></i> <strong>Outreach Funnels:</strong> Designing automated, verified business lead extraction and outreach engines.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Cross-Border Operations:</strong> Seamless executive coordination and client management across US and global teams.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Operational SOPs:</strong> Documenting workflows and establishing repeatable team processes.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Client Retention Systems:</strong> Escalation frameworks and feedback loops that maximize lifetime value.</li>
                     </ul>
-                    <div class="service-footer">
-                        <button class="btn-service" onclick="selectService('Business Development & Strategy')">
-                            <span>Inquire Service</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <button class="service-cta-btn" onclick="inquireService('Business Development & Market Expansion')">
+                        <span>Explore Growth Strategy</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
 
-                <!-- Service 5: Startup Growth & Fractional CTO -->
-                <div class="service-card featured-service">
-                    <div class="service-glow"></div>
-                    <div class="service-header">
-                        <div class="service-icon-box">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <span class="service-pill">Advisory</span>
+                <!-- Service 5 -->
+                <div class="service-box box-butter">
+                    <div class="service-badge">Executive Advisory</div>
+                    <div class="service-icon-wrapper icon-bg-butter">
+                        <i class="fas fa-seedling"></i>
                     </div>
-                    <h3 class="service-title">Startup Growth & Interim CTO</h3>
-                    <p class="service-desc">
-                        High-leverage technical leadership for seed and growth-stage founders. Providing the strategic vision, tech stack selection, and delivery discipline needed to scale.
+                    <h3 class="service-name">Startup Growth & Interim CTO Leadership</h3>
+                    <p class="service-pitch">
+                        Strategic, technical leadership for early-stage founders. Bridge the gap between investor expectations, product engineering, and sprint delivery.
                     </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> <strong>Fractional CTO Leadership:</strong> Aligning product roadmaps, outside dev teams, and founder priorities.</li>
-                        <li><i class="fas fa-check"></i> <strong>Technical Due Diligence:</strong> Evaluating architectures, AI failure modes, and cloud expenditure optimization.</li>
-                        <li><i class="fas fa-check"></i> <strong>Pitch & Demo Support:</strong> Building investor-ready prototypes, interactive demos, and technical decks.</li>
-                        <li><i class="fas fa-check"></i> <strong>Founder-Level Ownership:</strong> High discretion, rapid iteration, and a relentless bias for getting things done.</li>
+                    <ul class="service-checklist">
+                        <li><i class="fas fa-check-circle"></i> <strong>Fractional CTO:</strong> Architecting system roadmaps, managing developer output, and setting priorities.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Technical Due Diligence:</strong> Evaluating tech stacks, cost optimization, and AI inference trade-offs.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Investor Demos:</strong> Building high-impact functional prototypes and technical pitch materials.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Founder-Level Ownership:</strong> Unmatched accountability, high discretion, and an urgent bias for action.</li>
                     </ul>
-                    <div class="service-footer">
-                        <button class="btn-service" onclick="selectService('Startup Growth & Interim CTO')">
-                            <span>Inquire Service</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+                    <button class="service-cta-btn" onclick="inquireService('Startup Growth & Interim CTO Leadership')">
+                        <span>Retain as Interim CTO</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Professional Journey / Experience Section -->
-    <section id="experience" class="experience-section">
+    <!-- Professional Journey Section -->
+    <section id="journey" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <div class="section-tag">CAREER PATH</div>
-                <h2 class="section-title">Professional Journey</h2>
-                <p class="section-subtitle">Real-world leadership, hands-on engineering, and track record of delivering transformative products.</p>
-                <div class="section-line"></div>
+            <div class="section-intro">
+                <span class="tag-pill pill-blue">TRACK RECORD</span>
+                <h2 class="section-heading">Professional Journey & Experience</h2>
+                <p class="section-subtext">Hands-on leadership across tech ventures, enterprise products, and AI research labs.</p>
+                <div class="heading-line"></div>
             </div>
 
-            <div class="experience-timeline">
+            <div class="journey-cards-flow">
                 <!-- Role 1 -->
-                <div class="exp-item">
-                    <div class="exp-badge">
-                        <span class="exp-period">Jul 2026 – Nov 2026</span>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
+                <div class="journey-card">
+                    <div class="journey-time-tag pill-peach">Jul 2026 – Nov 2026</div>
+                    <div class="journey-body">
+                        <div class="journey-header">
                             <div>
-                                <h3 class="exp-title">Interim CTO</h3>
-                                <h4 class="exp-company"><i class="fas fa-building"></i> Yugal Wellness</h4>
+                                <h3 class="journey-role">Interim CTO</h3>
+                                <h4 class="journey-company">Yugal Wellness</h4>
                             </div>
-                            <span class="exp-role-tag">Executive Leadership</span>
+                            <span class="role-category-chip chip-peach">Executive Leadership</span>
                         </div>
-                        <p class="exp-summary">
-                            Led technology strategy and delivery for the Yugal wellness mobile application, a gamified product centered on daily wellness challenges, habit reset boxes, and interactive reward badges.
+                        <p class="journey-desc">
+                            Directed technology strategy and sprint execution for the Yugal wellness mobile application—a gamified lifestyle platform built around daily reset boxes, habit trackers, and milestone badges.
                         </p>
-                        <ul class="exp-bullets">
-                            <li>Drove the comprehensive AI roadmap behind <strong>Yugal AI</strong>, the app's intelligent wellness chatbot, setting technical architecture and build priorities as tech lead.</li>
-                            <li>Managed and directed outside developers, aligning engineering delivery with the founding team's strategic vision.</li>
-                            <li>Maintained strict delivery velocity across both mobile core features and AI conversational modules.</li>
+                        <ul class="journey-achievements">
+                            <li>Orchestrated the technical architecture behind <strong>Yugal AI</strong>, the app's conversational wellness chatbot, serving as technical lead.</li>
+                            <li>Directed outside developer teams and synchronized sprint deliverables with founder goals, eliminating feature bloat.</li>
+                            <li>Maintained strict delivery cadence across mobile core capabilities and intelligent conversational interfaces.</li>
                         </ul>
-                        <div class="exp-tech-tags">
-                            <span>AI Architecture</span>
-                            <span>Mobile App Delivery</span>
-                            <span>Chatbot Engineering</span>
+                        <div class="journey-skills">
                             <span>Product Strategy</span>
+                            <span>AI Roadmap</span>
+                            <span>Mobile App Delivery</span>
+                            <span>Team Leadership</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Role 2 -->
-                <div class="exp-item">
-                    <div class="exp-badge">
-                        <span class="exp-period">Sept 2025 – Present</span>
-                    </div>
-                    <div class="exp-card highlight-card">
-                        <div class="exp-header">
+                <div class="journey-card featured-journey">
+                    <div class="journey-time-tag pill-lavender">Sept 2025 – Present</div>
+                    <div class="journey-body">
+                        <div class="journey-header">
                             <div>
-                                <h3 class="exp-title">CEO & Founder</h3>
-                                <h4 class="exp-company"><i class="fas fa-globe"></i> Polarions AI <span class="exp-location">(Sweden / Global)</span></h4>
+                                <h3 class="journey-role">CEO & Founder</h3>
+                                <h4 class="journey-company">Polarions AI <span class="location-sub">(Sweden / International)</span></h4>
                             </div>
-                            <span class="exp-role-tag founder-tag">Founder</span>
+                            <span class="role-category-chip chip-lavender">Founder & CEO</span>
                         </div>
-                        <p class="exp-summary">
-                            Founding and leading an AI agency delivering bespoke autonomous AI agents, intelligent workflow automation, and enterprise integration pipelines for international clients.
+                        <p class="journey-desc">
+                            Founded and leading an agile AI engineering studio designing and shipping multi-agent systems, document parsers, and workflow automation for enterprise operations worldwide.
                         </p>
-                        <ul class="exp-bullets">
-                            <li>Translate complex business challenges into production-ready AI tools, managing client relationships and project delivery end-to-end.</li>
-                            <li>Architect autonomous agent networks using LangChain and MCP servers for customer service, document search, and operations.</li>
-                            <li>Oversee technical team execution, ensuring zero downtime, strict data privacy, and measurable ROI.</li>
+                        <ul class="journey-achievements">
+                            <li>Translate executive business pain points into scalable, production-ready AI solutions with end-to-end delivery ownership.</li>
+                            <li>Lead client engagements across Europe and North America, ensuring robust privacy, zero data leakage, and high ROI.</li>
+                            <li>Architect autonomous tool-calling networks using LangChain, ReAct reasoning, and Model Context Protocol (MCP).</li>
                         </ul>
-                        <div class="exp-tech-tags">
+                        <div class="journey-skills">
                             <span>Enterprise AI</span>
                             <span>Multi-Agent Systems</span>
-                            <span>Workflow Automation</span>
-                            <span>Client Delivery</span>
+                            <span>Client Management</span>
+                            <span>MCP Architecture</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Role 3 -->
-                <div class="exp-item">
-                    <div class="exp-badge">
-                        <span class="exp-period">Aug 2025 – Feb 2026</span>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
+                <div class="journey-card">
+                    <div class="journey-time-tag pill-sage">Aug 2025 – Feb 2026</div>
+                    <div class="journey-body">
+                        <div class="journey-header">
                             <div>
-                                <h3 class="exp-title">Generative AI Engineer</h3>
-                                <h4 class="exp-company"><i class="fas fa-microchip"></i> Akiyam Solutions</h4>
+                                <h3 class="journey-role">Generative AI Engineer</h3>
+                                <h4 class="journey-company">Akiyam Solutions</h4>
                             </div>
-                            <span class="exp-role-tag">AI Engineering</span>
+                            <span class="role-category-chip chip-sage">AI Engineering</span>
                         </div>
-                        <p class="exp-summary">
-                            Engineered high-accuracy retrieval-augmented generation (RAG) agents and integrated cutting-edge Model Context Protocol (MCP) servers to automate core corporate tasks.
+                        <p class="journey-desc">
+                            Engineered high-reliability retrieval-augmented generation (RAG) agents and integrated Model Context Protocol (MCP) servers to automate repetitive enterprise business tasks.
                         </p>
-                        <ul class="exp-bullets">
-                            <li>Built context-aware data agents using LangChain, FAISS, and leading LLM APIs.</li>
-                            <li>Evaluated model failure modes, hallucination rates, and inference latency to systematically enhance output reliability.</li>
-                            <li>Integrated MCP servers to seamlessly connect AI agents to live business databases and external tools.</li>
+                        <ul class="journey-achievements">
+                            <li>Developed context-aware enterprise data agents using LangChain, FAISS, and modern LLM APIs.</li>
+                            <li>Systematically benchmarked model failure modes, hallucination vulnerabilities, and token cost economics.</li>
+                            <li>Integrated live internal company tools and databases via custom MCP servers.</li>
                         </ul>
-                        <div class="exp-tech-tags">
+                        <div class="journey-skills">
                             <span>LangChain</span>
-                            <span>RAG Architecture</span>
+                            <span>FAISS Vector Search</span>
                             <span>MCP Integration</span>
-                            <span>LLM APIs</span>
+                            <span>Model Evaluation</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Role 4 -->
-                <div class="exp-item">
-                    <div class="exp-badge">
-                        <span class="exp-period">Feb 2024 – Mar 2026</span>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
+                <div class="journey-card">
+                    <div class="journey-time-tag pill-blue">Feb 2024 – Mar 2026</div>
+                    <div class="journey-body">
+                        <div class="journey-header">
                             <div>
-                                <h3 class="exp-title">Executive Assistant & Operations Coordinator</h3>
-                                <h4 class="exp-company"><i class="fas fa-handshake"></i> Wellomytech & Bael Wellness <span class="exp-location">(USA)</span></h4>
+                                <h3 class="journey-role">Executive Operations & Tech Coordinator</h3>
+                                <h4 class="journey-company">Wellomytech & Bael Wellness <span class="location-sub">(United States)</span></h4>
                             </div>
-                            <span class="exp-role-tag">Operations & Advisory</span>
+                            <span class="role-category-chip chip-blue">US Operations</span>
                         </div>
-                        <p class="exp-summary">
-                            Provided high-level operational leadership and executive coordination supporting US leadership teams, automating workflows, and managing customer success pipelines.
+                        <p class="journey-desc">
+                            Delivered high-discretion operational support to US leadership teams, automating reporting pipelines, managing customer relations, and maintaining cross-timezone workflows.
                         </p>
-                        <ul class="exp-bullets">
-                            <li>Engineered automated reporting pipelines with SQL, Excel, and Power BI to give executives instant operational metrics.</li>
-                            <li>Managed customer escalation pipelines, driving client satisfaction and retention through structured workflows.</li>
-                            <li>Built custom n8n automations that eliminated hours of repetitive manual data entry weekly.</li>
+                        <ul class="journey-achievements">
+                            <li>Built automated data reporting and executive visibility dashboards with Power BI, Excel, and SQL.</li>
+                            <li>Designed custom n8n automations that reclaimed hours of manual administrative effort each week.</li>
+                            <li>Handled executive communications, confidential briefings, and cross-functional task tracking.</li>
                         </ul>
-                        <div class="exp-tech-tags">
-                            <span>Power BI</span>
-                            <span>Process Automation</span>
-                            <span>US Client Relations</span>
+                        <div class="journey-skills">
+                            <span>Power BI & SQL</span>
+                            <span>Workflow Design</span>
+                            <span>Client Escalations</span>
                             <span>Operations</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Role 5 -->
-                <div class="exp-item">
-                    <div class="exp-badge">
-                        <span class="exp-period">Dec 2023 – Apr 2024</span>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
+                <div class="journey-card">
+                    <div class="journey-time-tag pill-lavender">Dec 2023 – Apr 2024</div>
+                    <div class="journey-body">
+                        <div class="journey-header">
                             <div>
-                                <h3 class="exp-title">Robotics & AI Research Intern</h3>
-                                <h4 class="exp-company"><i class="fas fa-flask"></i> Inn Stem Lab</h4>
+                                <h3 class="journey-role">Robotics & AI Research Intern</h3>
+                                <h4 class="journey-company">Inn Stem Lab</h4>
                             </div>
-                            <span class="exp-role-tag">Research & IoT</span>
+                            <span class="role-category-chip chip-lavender">Research & IoT</span>
                         </div>
-                        <p class="exp-summary">
-                            Engineered IoT automation systems with embedded AI modules, including autonomous drone applications and high-frequency EEG plant data analysis.
+                        <p class="journey-desc">
+                            Engineered robotics and Internet of Things (IoT) automation systems with embedded AI modules, including autonomous drone applications and high-frequency EEG plant data analysis (cutting processing time by 20%).
                         </p>
-                        <ul class="exp-bullets">
-                            <li>Analyzed EEG-based plant behavior data, cutting data processing pipeline duration by 20%.</li>
-                            <li>Programmed embedded hardware and sensors for autonomous decision-making in edge devices.</li>
-                        </ul>
-                        <div class="exp-tech-tags">
-                            <span>IoT Systems</span>
-                            <span>Drone Automation</span>
+                        <div class="journey-skills">
+                            <span>Embedded Systems</span>
+                            <span>Drone IoT</span>
                             <span>EEG Analysis</span>
-                            <span>Embedded AI</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Role 6 -->
-                <div class="exp-item">
-                    <div class="exp-badge">
-                        <span class="exp-period">Dec 2022 – Aug 2023</span>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
+                <div class="journey-card">
+                    <div class="journey-time-tag pill-sage">Dec 2022 – Aug 2023</div>
+                    <div class="journey-body">
+                        <div class="journey-header">
                             <div>
-                                <h3 class="exp-title">Machine Learning Intern</h3>
-                                <h4 class="exp-company"><i class="fas fa-network-wired"></i> Broader AI & Unikwork</h4>
+                                <h3 class="journey-role">Machine Learning Intern</h3>
+                                <h4 class="journey-company">Broader AI & Unikwork</h4>
                             </div>
-                            <span class="exp-role-tag">ML Foundations</span>
+                            <span class="role-category-chip chip-sage">Foundational ML</span>
                         </div>
-                        <p class="exp-summary">
-                            Designed foundational ML classification pipelines and conducted extensive research on meta-feature tuning and model optimization.
+                        <p class="journey-desc">
+                            Designed machine learning classification pipelines and conducted extensive experimental research on meta-feature tuning, boosting model accuracy by 15% and cutting preprocessing duration by 30%.
                         </p>
-                        <ul class="exp-bullets">
-                            <li>Boosted applied model accuracy by 15% through algorithmic optimization and meta-feature tuning.</li>
-                            <li>Reduced machine learning preprocessing time by 30% across real-world datasets.</li>
-                        </ul>
-                        <div class="exp-tech-tags">
+                        <div class="journey-skills">
+                            <span>Meta-Learning</span>
                             <span>Scikit-Learn</span>
-                            <span>Meta-Features</span>
-                            <span>Data Pipelines</span>
-                            <span>Classification</span>
+                            <span>Pipeline Optimization</span>
                         </div>
                     </div>
                 </div>
@@ -550,429 +542,387 @@
         </div>
     </section>
 
-    <!-- Education & Research Section -->
-    <section id="education" class="education-section">
+    <!-- Education, Honors & Credentials -->
+    <section id="education" class="section">
         <div class="container">
-            <div class="section-header">
-                <div class="section-tag">ACADEMIC EXCELLENCE</div>
-                <h2 class="section-title">Education & Research</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2024 – 2026</div>
-                        <h3 class="timeline-title">Master of Science (M.Sc.)</h3>
-                        <h4 class="timeline-subtitle">Data Science — Vellore Institute of Technology (VIT)</h4>
-                        <p class="timeline-description">
-                            Advanced specialization in Machine Learning, Generative AI, RAG architectures, and Multi-Agent Systems. Published comprehensive research in neural meta-learning.
-                        </p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">Published at ICASETM 2025</span>
-                            <span class="achievement">GenAI & Agent Memory</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2021 – 2024</div>
-                        <h3 class="timeline-title">Bachelor of Science (B.Sc.)</h3>
-                        <h4 class="timeline-subtitle">Information Technology — Sarvajanik University</h4>
-                        <p class="timeline-description">
-                            Graduated with a stellar <strong>CGPA of 8.81</strong>. Focused on software engineering, data structures, algorithms, database architectures, and distributed systems.
-                        </p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">CGPA 8.81 / 10.0</span>
-                            <span class="achievement">Lead Speaker on AI/ML</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-intro">
+                <span class="tag-pill pill-lavender">ACADEMICS & HONORS</span>
+                <h2 class="section-heading">Rigorous Foundation, Global Recognition</h2>
+                <div class="heading-line"></div>
             </div>
 
-            <!-- Honors & Guinness World Record -->
-            <div class="honors-banner">
-                <div class="honor-icon"><i class="fas fa-trophy"></i></div>
-                <div class="honor-content">
-                    <h4>Guinness World Record Holder</h4>
-                    <p>Engineered and organized a monumental mosaic art piece utilizing 18,400 biodegradable sanitary pads, creating social impact through large-scale creative execution.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates & Projects -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">PORTFOLIO</div>
-                <h2 class="section-title">Featured Projects & Certifications</h2>
-                <div class="section-line"></div>
-            </div>
-            
-            <!-- Certifications Grid -->
-            <div class="certificates-container">
-                <h3 class="subsection-title">Industry Certifications & Credentials</h3>
-                <div class="certificates-grid">
-                    <!-- Certificate 1: Stanford -->
-                    <div class="certificate-card">
-                        <div class="card-glow"></div>
-                        <div class="certificate-icon">
-                            <img src="assets/images/stanford.jpg" alt="Stanford Certificate">
-                        </div>
-                        <h4>Supervised Machine Learning</h4>
-                        <p>Stanford University & DeepLearning.AI</p>
-                        <div class="certificate-year">2023</div>
-                    </div>
-
-                    <!-- Certificate 2: IBM -->
-                    <div class="certificate-card">
-                        <div class="card-glow"></div>
-                        <div class="certificate-icon">
-                            <img src="assets/images/ibm.png" alt="IBM LLM Certificate">
-                        </div>
-                        <h4>Introduction to Large Language Models</h4>
-                        <p>IBM</p>
-                        <div class="certificate-year">2025</div>
-                    </div>
-
-                    <!-- Certificate 3: DeepLearning.AI -->
-                    <div class="certificate-card">
-                        <div class="card-glow"></div>
-                        <div class="certificate-icon">
-                            <img src="assets/images/dl.png" alt="Deep Learning Certificate">
-                        </div>
-                        <h4>LLMs as Operating Systems: Agent Memory</h4>
-                        <p>DeepLearning.AI</p>
-                        <div class="certificate-year">2025</div>
-                    </div>
-
-                    <!-- Certificate 4: Microsoft -->
-                    <div class="certificate-card">
-                        <div class="card-glow"></div>
-                        <div class="certificate-icon">
-                            <img src="assets/images/gai.jpg" alt="Microsoft GenAI Certificate">
-                        </div>
-                        <h4>Career Essentials in Generative AI</h4>
-                        <p>Microsoft & LinkedIn</p>
-                        <div class="certificate-year">2025</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Featured Projects Grid -->
-            <div class="projects-container">
-                <h3 class="subsection-title">Selected Projects</h3>
-                <div class="projects-grid">
-                    <!-- Project 1: Meta Feature Selection -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/3.png" alt="Meta-Feature Selection Research">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/KikaniBansari/meta-feature-selection.git" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badge">Published Research · ICASETM 2025</div>
-                            <h4 class="project-title">Neural Meta-Feature Model Selection</h4>
-                            <p class="project-description">
-                                Trained a neural meta-learner predicting optimal machine learning algorithms (SVM, Random Forest, Decision Tree, Ensembles) for unseen datasets, achieving <strong>92% accuracy across 200+ OpenML datasets</strong> with SHAP/LIME interpretability.
-                            </p>
-                            <div class="project-tech">
-                                <span>PyTorch</span>
-                                <span>Meta-Learning</span>
-                                <span>SHAP & LIME</span>
-                                <span>Scikit-Learn</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: Universal AI Education Platform -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project1.png" alt="Universal AI Digital Education Platform">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badge">30-Day MVP · Team Lead</div>
-                            <h4 class="project-title">AI Digital Education Platform</h4>
-                            <p class="project-description">
-                                Led a 5-member team delivering a complete minimum viable product with responsive web interface in 30 days. Engineered semantic search, contextual question answering, and a Local Memory Architecture for private data handling.
-                            </p>
-                            <div class="project-tech">
-                                <span>Next.js</span>
-                                <span>FastAPI</span>
-                                <span>LangChain</span>
-                                <span>PostgreSQL</span>
-                                <span>Docker</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: RAG Document Parser & Chatbot -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/1.png" alt="RAG-Based Document Parser">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/KikaniBansari/rag-chatbot.git" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badge">Production Architecture</div>
-                            <h4 class="project-title">RAG Document Parser & Agentic Chatbot</h4>
-                            <p class="project-description">
-                                An offline and online document question-answering system with multi-document memory and citation-based answers. Deployed through a FastAPI REST API, cutting retrieval latency by <strong>35% with embedding caching</strong>.
-                            </p>
-                            <div class="project-tech">
-                                <span>FastAPI</span>
-                                <span>LangChain</span>
-                                <span>FAISS</span>
-                                <span>ChromaDB</span>
-                                <span>OpenAI API</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: Voice-Interactive Multi-Agent System -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/meta.png" alt="Voice-Interactive Multi-Agent System">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badge">Dissertation Project</div>
-                            <h4 class="project-title">Voice-Interactive Multi-Agent Framework</h4>
-                            <p class="project-description">
-                                Designed a collaborative multi-agent architecture incorporating Whisper speech recognition, intent detection, and ReAct reasoning for role-based execution. Improved interaction accuracy by 25% with token-based segmentation.
-                            </p>
-                            <div class="project-tech">
-                                <span>Whisper</span>
-                                <span>ReAct Reasoning</span>
-                                <span>Multi-Agent</span>
-                                <span>Flask</span>
-                                <span>Python</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: AI Marketing & Lead Automation -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/port.png" alt="AI Marketing & Outreach Automation">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badge">Enterprise Automation</div>
-                            <h4 class="project-title">Autonomous Marketing & Lead Engine</h4>
-                            <p class="project-description">
-                                Automated end-to-end content generation and targeted social distribution with Stable Diffusion, n8n, and Meta Graph API, reducing creation turnaround from hours to under 5 minutes with a zero-code staff prompt workflow.
-                            </p>
-                            <div class="project-tech">
-                                <span>n8n</span>
-                                <span>Stable Diffusion</span>
-                                <span>Meta Graph API</span>
-                                <span>Lead Scraping</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6: Interactive 3D Portfolio -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/2.png" alt="Interactive Portfolio">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/KikaniBansari/KikaniBansari.github.io.git" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Repository">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badge">Creative Engineering</div>
-                            <h4 class="project-title">Interactive 3D Web Experience</h4>
-                            <p class="project-description">
-                                High-performance static portfolio featuring Spline 3D scene rendering, Three.js custom particle physics, glassmorphism aesthetics, and integrated lead capture pipelines.
-                            </p>
-                            <div class="project-tech">
-                                <span>Three.js</span>
-                                <span>Spline 3D</span>
-                                <span>JavaScript</span>
-                                <span>CSS Glassmorphism</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Collaboration Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">LET'S CONNECT</div>
-                <h2 class="section-title">Ready to Build Something Exceptional?</h2>
-                <p class="section-subtitle">Whether you need an autonomous AI agent, custom ERP, scalable app, or strategic technical leadership, I'm here to help.</p>
-                <div class="section-line"></div>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-title">Let's Discuss Your Vision</h3>
-                    <p class="contact-description">
-                        I collaborate with ambitious founders, established businesses, and engineering teams globally. Reach out with your project outline or challenge, and I'll respond within 24 hours.
+            <!-- Education Cards Grid -->
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-period">2024 – 2026</div>
+                    <h3 class="edu-degree">Master of Science in Data Science</h3>
+                    <h4 class="edu-inst">Vellore Institute of Technology (VIT), Vellore</h4>
+                    <p class="edu-desc">
+                        Advanced coursework in Machine Learning, Deep Learning, Generative AI, and Agent Memory architectures. Published comprehensive research in neural meta-feature selection.
                     </p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span class="contact-item-label">Direct Email</span>
-                                <a href="mailto:bansari45603@gmail.com" class="contact-item-value">bansari45603@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-location-dot"></i>
-                            <div>
-                                <span class="contact-item-label">Availability</span>
-                                <span class="contact-item-value">Global & US Remote Coordination</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/bansari31" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                            <div class="social-text">
-                                <span class="social-title">LinkedIn</span>
-                                <span class="social-sub">Connect & Network</span>
-                            </div>
-                            <i class="fas fa-external-link-alt social-arrow"></i>
-                        </a>
-                        <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-github"></i>
-                            <div class="social-text">
-                                <span class="social-title">GitHub</span>
-                                <span class="social-sub">Explore Code & Repos</span>
-                            </div>
-                            <i class="fas fa-external-link-alt social-arrow"></i>
-                        </a>
-                        <a href="assets/documents/Bansari_Kikani_Resume_1.pdf" download class="social-link resume-download">
-                            <i class="fas fa-file-pdf"></i>
-                            <div class="social-text">
-                                <span class="social-title">Download Resume</span>
-                                <span class="social-sub">Updated AI Engineer Resume</span>
-                            </div>
-                            <i class="fas fa-arrow-down social-arrow"></i>
-                        </a>
+                    <div class="edu-tags">
+                        <span class="tag-pill pill-sage">Research Publication</span>
+                        <span class="tag-pill pill-blue">GenAI Specialization</span>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <form class="form" id="contactForm"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLSfJQ7vpATtslYWCHYhnfU3wjynbN2K0_7XZOFjfvwJr61qGug/formResponse" 
-                        method="POST" target="hidden_iframe">
-                        
-                        <h4 class="form-heading">Send a Message</h4>
+                <div class="edu-card">
+                    <div class="edu-period">2021 – 2024</div>
+                    <h3 class="edu-degree">Bachelor of Science in Information Technology</h3>
+                    <h4 class="edu-inst">Sarvajanik University · CGPA 8.81 / 10.0</h4>
+                    <p class="edu-desc">
+                        Rigorous focus on software engineering, data structures, algorithms, relational database architectures, and distributed computing. Served as speaker and workshop conductor on applied AI.
+                    </p>
+                    <div class="edu-tags">
+                        <span class="tag-pill pill-peach">CGPA 8.81</span>
+                        <span class="tag-pill pill-lavender">Lead Speaker</span>
+                    </div>
+                </div>
+            </div>
 
-                        <!-- Quick Service Selection Badges -->
-                        <div class="service-select-group">
-                            <label class="service-select-label">I'm interested in:</label>
-                            <div class="service-select-chips">
-                                <button type="button" class="service-chip active" data-service="General Inquiry">All / General</button>
-                                <button type="button" class="service-chip" data-service="AI Agents & Automation">AI Agents</button>
-                                <button type="button" class="service-chip" data-service="ERP Systems & Business Operations">ERP Systems</button>
-                                <button type="button" class="service-chip" data-service="Full-Stack & App Development">App Dev</button>
-                                <button type="button" class="service-chip" data-service="Startup Growth & Interim CTO">Startup / CTO</button>
-                            </div>
+            <!-- Guinness World Record Feature -->
+            <div class="honor-feature-card">
+                <div class="honor-badge-icon"><i class="fas fa-trophy"></i></div>
+                <div class="honor-details">
+                    <div class="honor-tag">GLOBAL RECOGNITION</div>
+                    <h3 class="honor-title">Guinness World Record Holder</h3>
+                    <p class="honor-summary">
+                        Conceptualized, coordinated, and executed a monumental mosaic art installation utilizing <strong>18,400 biodegradable sanitary pads</strong>. Demonstrated large-scale creative logistical mastery and commitment to social awareness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Certifications Strip -->
+            <div class="certs-section">
+                <h3 class="certs-title">Certified Specializations</h3>
+                <div class="certs-grid">
+                    <div class="cert-item">
+                        <img src="assets/images/stanford.jpg" alt="Stanford Supervised ML Certificate">
+                        <div>
+                            <h4>Supervised Machine Learning</h4>
+                            <p>Stanford University & DeepLearning.AI · 2023</p>
                         </div>
-
-                        <div class="form-group">
-                            <input type="text" name="entry.507872448" id="name" required placeholder=" ">
-                            <label for="name">Your Name</label>
-                            <div class="form-line"></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="assets/images/ibm.png" alt="IBM LLM Certificate">
+                        <div>
+                            <h4>Introduction to Large Language Models</h4>
+                            <p>IBM · 2025</p>
                         </div>
-
-                        <div class="form-group">
-                            <input type="email" name="entry.2124056481" id="email" required placeholder=" ">
-                            <label for="email">Your Email Address</label>
-                            <div class="form-line"></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="assets/images/dl.png" alt="Deep Learning Agent Memory Certificate">
+                        <div>
+                            <h4>LLMs as Operating Systems: Agent Memory</h4>
+                            <p>DeepLearning.AI · 2025</p>
                         </div>
-
-                        <div class="form-group">
-                            <input type="text" name="entry.2100042675" id="subject" required placeholder=" ">
-                            <label for="subject">Subject / Project Scope</label>
-                            <div class="form-line"></div>
+                    </div>
+                    <div class="cert-item">
+                        <img src="assets/images/gai.jpg" alt="Microsoft Generative AI Certificate">
+                        <div>
+                            <h4>Career Essentials in Generative AI</h4>
+                            <p>Microsoft & LinkedIn · 2025</p>
                         </div>
-
-                        <div class="form-group">
-                            <textarea name="entry.2019778046" id="message" required placeholder=" "></textarea>
-                            <label for="message">Your Message or Project Details</label>
-                            <div class="form-line"></div>
-                        </div>
-
-                        <button type="submit" class="btn-submit" id="submitBtn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Selected Projects Section -->
+    <section id="work" class="section section-alt">
+        <div class="container">
+            <div class="section-intro">
+                <span class="tag-pill pill-peach">PORTFOLIO</span>
+                <h2 class="section-heading">Featured Projects & Technical Artifacts</h2>
+                <p class="section-subtext">A selection of production systems, academic research, and scalable open-source work.</p>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="projects-clean-grid">
+                <!-- Project 1 -->
+                <div class="project-clean-card">
+                    <div class="project-thumb">
+                        <img src="assets/images/3.png" alt="Meta-Feature Model Selection Research">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta-pill pill-peach">Published Research · ICASETM 2025</div>
+                        <h3 class="project-heading">Neural Meta-Feature Framework for Model Selection</h3>
+                        <p class="project-excerpt">
+                            Trained a neural meta-learner predicting optimal machine learning models (SVM, Random Forest, Decision Tree, Ensembles) across unseen datasets, achieving <strong>92% accuracy across 200+ OpenML datasets</strong> with SHAP and LIME interpretability.
+                        </p>
+                        <div class="project-tech-chips">
+                            <span>PyTorch</span>
+                            <span>Meta-Learning</span>
+                            <span>SHAP</span>
+                            <span>LIME</span>
+                            <span>OpenML</span>
+                        </div>
+                        <div class="project-link-row">
+                            <a href="https://github.com/KikaniBansari/meta-feature-selection.git" target="_blank" rel="noopener" class="link-arrow">
+                                <span>View GitHub Repository</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-clean-card">
+                    <div class="project-thumb">
+                        <img src="assets/images/project1.png" alt="Universal AI Digital Education Platform">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta-pill pill-sage">30-Day MVP Delivery · Team Lead</div>
+                        <h3 class="project-heading">AI-Powered Digital Education Platform</h3>
+                        <p class="project-excerpt">
+                            Led a 5-member engineering team to ship a full web MVP in 30 days. Engineered semantic search, contextual question answering, and a Local Memory Architecture for private data management.
+                        </p>
+                        <div class="project-tech-chips">
+                            <span>Next.js</span>
+                            <span>FastAPI</span>
+                            <span>LangChain</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-link-row">
+                            <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="link-arrow">
+                                <span>View Project Details</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-clean-card">
+                    <div class="project-thumb">
+                        <img src="assets/images/1.png" alt="RAG-Based Document Parser & Chatbot">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta-pill pill-blue">Production Architecture</div>
+                        <h3 class="project-heading">RAG Document Parser & Intelligent Chatbot</h3>
+                        <p class="project-excerpt">
+                            Built an offline and online question-answering system with multi-document memory and citation-grounded outputs. Deployed through a FastAPI REST API, cutting latency by <strong>35% with semantic embedding caching</strong>.
+                        </p>
+                        <div class="project-tech-chips">
+                            <span>FastAPI</span>
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>ChromaDB</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="project-link-row">
+                            <a href="https://github.com/KikaniBansari/rag-chatbot.git" target="_blank" rel="noopener" class="link-arrow">
+                                <span>View GitHub Repository</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-clean-card">
+                    <div class="project-thumb">
+                        <img src="assets/images/meta.png" alt="Voice-Interactive Multi-Agent System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta-pill pill-lavender">Dissertation Project</div>
+                        <h3 class="project-heading">Voice-Interactive Collaborative Multi-Agent System</h3>
+                        <p class="project-excerpt">
+                            Designed a voice-driven multi-agent framework incorporating Whisper speech recognition, user intent detection, and ReAct-style reasoning for role-based execution. Improved interaction accuracy by 25% with token-based segmentation.
+                        </p>
+                        <div class="project-tech-chips">
+                            <span>Whisper</span>
+                            <span>Multi-Agent</span>
+                            <span>ReAct</span>
+                            <span>Flask</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-link-row">
+                            <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="link-arrow">
+                                <span>View Project Details</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-clean-card">
+                    <div class="project-thumb">
+                        <img src="assets/images/port.png" alt="AI Marketing & Outreach Engine">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta-pill pill-butter">Operational Automation</div>
+                        <h3 class="project-heading">Autonomous Marketing & Lead Generation Engine</h3>
+                        <p class="project-excerpt">
+                            Automated end-to-end multi-modal content creation and targeted distribution with Stable Diffusion, n8n, and Meta Graph API, slashing creation turnaround from hours to under 5 minutes with a zero-code prompt workflow.
+                        </p>
+                        <div class="project-tech-chips">
+                            <span>n8n</span>
+                            <span>Stable Diffusion</span>
+                            <span>Meta Graph API</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-link-row">
+                            <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="link-arrow">
+                                <span>View Project Details</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-clean-card">
+                    <div class="project-thumb">
+                        <img src="assets/images/2.png" alt="Minimalist Interactive Portfolio">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta-pill pill-sage">Web Engineering</div>
+                        <h3 class="project-heading">Minimalist Clean Web Experience</h3>
+                        <p class="project-excerpt">
+                            This ultra-fast, responsive web portfolio built with pure HTML, modern CSS variables, and vanilla JavaScript. Designed with clean pastel aesthetics, subtle micro-interactions, and integrated Google Forms lead capture.
+                        </p>
+                        <div class="project-tech-chips">
+                            <span>Semantic HTML</span>
+                            <span>Pastel CSS</span>
+                            <span>Vanilla JS</span>
+                            <span>Mobile First</span>
+                        </div>
+                        <div class="project-link-row">
+                            <a href="https://github.com/KikaniBansari/KikaniBansari.github.io.git" target="_blank" rel="noopener" class="link-arrow">
+                                <span>View GitHub Repository</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-col">
+                    <span class="tag-pill pill-peach">LET'S CONNECT</span>
+                    <h2 class="contact-title">Have a project or vision? Let's build it right.</h2>
+                    <p class="contact-lead">
+                        I partner with ambitious founders, established companies, and technical leaders globally. Whether you need an intelligent AI agent, a bespoke ERP, or fractional CTO direction, I would love to hear from you.
+                    </p>
+
+                    <div class="contact-cards-list">
+                        <a href="mailto:bansari45603@gmail.com" class="direct-contact-card">
+                            <div class="contact-icon icon-sage"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="direct-label">Direct Email</div>
+                                <div class="direct-value">bansari45603@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/bansari31" target="_blank" rel="noopener" class="direct-contact-card">
+                            <div class="contact-icon icon-blue"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="direct-label">LinkedIn</div>
+                                <div class="direct-value">linkedin.com/in/bansari31</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener" class="direct-contact-card">
+                            <div class="contact-icon icon-lavender"><i class="fab fa-github"></i></div>
+                            <div>
+                                <div class="direct-label">GitHub</div>
+                                <div class="direct-value">github.com/KikaniBansari</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-col">
+                    <div class="form-wrapper">
+                        <h3 class="form-title">Send a Message</h3>
+                        <p class="form-sub">Select your project interest and share a few details. I typically respond within 24 hours.</p>
+
+                        <form id="contactForm" class="contact-form"
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSfJQ7vpATtslYWCHYhnfU3wjynbN2K0_7XZOFjfvwJr61qGug/formResponse" 
+                            method="POST" target="hidden_iframe">
+                            
+                            <!-- Interactive Pastel Service Chips -->
+                            <div class="form-chips-group">
+                                <label class="chips-label">I need help with:</label>
+                                <div class="service-chips-row">
+                                    <button type="button" class="chip-btn active" data-service="General Consultation">General</button>
+                                    <button type="button" class="chip-btn" data-service="AI Agents & Workflow Automation">AI Agents</button>
+                                    <button type="button" class="chip-btn" data-service="Enterprise ERP & Operations Hubs">ERP Systems</button>
+                                    <button type="button" class="chip-btn" data-service="Full-Stack & Mobile App Development">App Dev</button>
+                                    <button type="button" class="chip-btn" data-service="Startup Growth & Interim CTO Leadership">Interim CTO</button>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="entry.507872448" required placeholder="e.g. Alex Morgan">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="email">Your Email Address</label>
+                                <input type="email" id="email" name="entry.2124056481" required placeholder="e.g. alex@company.com">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="subject">Subject / Scope</label>
+                                <input type="text" id="subject" name="entry.2100042675" required placeholder="Project overview or challenge">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="entry.2019778046" required rows="4" placeholder="Tell me about your goals, timelines, and requirements..."></textarea>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimalist Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">BK</span>
-                    <p>Bansari Kikani · AI Systems Architect, Tech Advisor & Founder</p>
+            <div class="footer-layout">
+                <div class="footer-left">
+                    <div class="footer-logo">Bansari Kikani</div>
+                    <p class="footer-bio">AI Systems Architect, Tech Advisor & Founder. Building intelligent, scalable software for international startups and enterprises.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
+                <div class="footer-nav">
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
-                    <a href="#experience">Journey</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#journey">Journey</a>
+                    <a href="#education">Education</a>
+                    <a href="#work">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <p class="copyright">&copy; 2026 Bansari Kikani. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bansari Kikani. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="https://github.com/KikaniBansari" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/bansari31" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="assets/documents/Bansari_Kikani_Resume_1.pdf" download>Resume</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
